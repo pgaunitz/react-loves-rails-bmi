@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Form from "./components/Form";
+import FormImperial from "./components/FormImperial";
 import Message from "./components/Message";
 import { calculateBmi } from "./helpers/bmiHelper";
 import MethodSelect from "./components/MethodSelect";
@@ -27,14 +28,20 @@ class App extends Component {
   render() {
     return (
       <div>
-        <MethodSelect
-        />
-        <Form
-          weight={this.state.weight}
-          height={this.state.height}
-          onChangeHandler={this.onChangeHandler}
-          onSubmitHandler={this.onSubmitHandler}
-        />
+        <MethodSelect>
+          <Form
+            weight={this.state.weight}
+            height={this.state.height}
+            onChangeHandler={this.onChangeHandler}
+            onSubmitHandler={this.onSubmitHandler}
+          />
+          <FormImperial
+            weight={this.state.weight}
+            height={this.state.height}
+            onChangeHandler={this.onChangeHandler}
+            onSubmitHandler={this.onSubmitHandler}
+          />
+        </MethodSelect>
         {this.state.bmiValue && (
           <Message
             bmiValue={this.state.bmiValue}

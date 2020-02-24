@@ -3,9 +3,7 @@ export const calculateBmi = (weight, height) => {
     const bmiMessage = setBMIMessage(bmiValue);
     return [bmiValue, bmiMessage];
 
-    const bmiImperialValue = ((weight * 703) / (height * height));
-    const bmiMessage = setBMIMessage(bmiImperialValue);
-    return [bmiImperialValue, bmiMessage];
+    
   };
   
   const setBMIMessage = finalBMI => {

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Form from "./components/Form";
 import Message from "./components/Message";
 import { calculateBmi } from "./helpers/bmiHelper";
+import { calculateBmi } from "./helpers/bmiHelperImerial";
 
 class App extends Component {
   state = {

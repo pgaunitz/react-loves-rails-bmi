@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Form from "./components/Form";
 import Message from "./components/Message";
 import { calculateBmi } from "./helpers/bmiHelper";
+import MethodSelect from "./components/MethodSelect";
 
 class App extends Component {
   state = {
@@ -26,6 +27,8 @@ class App extends Component {
   render() {
     return (
       <div>
+        <MethodSelect
+        />
         <Form
           weight={this.state.weight}
           height={this.state.height}

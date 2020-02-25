@@ -13,7 +13,7 @@ const Form = props => {
     }
   
   return (
-    <form onSubmit={props.onSubmitHandler}>
+    <form onSubmit={props.onSubmitHandler} class="ui form">
       <div className="form_input">
         <select
           name="countingSystem"
@@ -24,7 +24,7 @@ const Form = props => {
           <option value="imperial">Imperial</option>
         </select>
       </div>
-      <label htmlFor="weight">Weight</label>
+      <div className="element"><label htmlFor="weight">Weight</label></div>
       <input
         type="number"
         required
@@ -34,7 +34,7 @@ const Form = props => {
         id="weight"
         onChange={props.onChangeHandler}
       />
-      <label htmlFor="height">Height</label>
+      <div className="element"><label htmlFor="height">Height</label></div>
 
       <input
         type="number"
@@ -46,7 +46,7 @@ const Form = props => {
         onChange={props.onChangeHandler}
       />
       <div className="submit">
-      <button id="calculate">Calculate BMI</button>
+      <button id="calculate" class="ui button">Calculate BMI</button>
       </div>
     </form>
   );

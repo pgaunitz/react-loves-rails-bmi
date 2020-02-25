@@ -1,5 +1,4 @@
 import React from "react";
-
 const FormImperial = props => {
   return (
     <form onSubmit={props.onSubmitHandler}>
@@ -14,7 +13,6 @@ const FormImperial = props => {
       onChange={props.onChangeHandler}
     />
     <label htmlFor="height">Height</label>
-
     <input
       type="number"
       required
@@ -28,5 +26,4 @@ const FormImperial = props => {
   </form>
   );
 };
-
 export default FormImperial;

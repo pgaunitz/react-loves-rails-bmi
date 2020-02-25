@@ -3,7 +3,7 @@ export const calculateBmi = (weight, height, countingSystem) => {
    if (countingSystem == 'metric') {
     bmiValue = (weight / (((height / 100) * height) / 100)).toFixed(2);
    } else {
-    bmiValue = weight / (height * height) * 703
+    bmiValue = (weight / (height * height) * 703).toFixed(2)
    }
      
   

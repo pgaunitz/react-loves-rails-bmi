@@ -27,8 +27,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <MethodSelect
-        />
+        
         <Form
           weight={this.state.weight}
           height={this.state.height}

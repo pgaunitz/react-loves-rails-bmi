@@ -3,6 +3,14 @@ import React from "react";
 const Form = props => {
   return (
     <form onSubmit={props.onSubmitHandler}>
+      <select
+        name="countingSystem"
+        id="select-method"
+        onChange={props.onChangeHandler}
+      >
+        <option value="metric">Metric</option>
+        <option value="imperial">Imperial</option>
+      </select>
       <label htmlFor="weight">Weight</label>
       <input
         type="number"
@@ -24,7 +32,7 @@ const Form = props => {
         id="height"
         onChange={props.onChangeHandler}
       />
-      <button id='calculate'>Calculate BMI</button>
+      <button id="calculate">Calculate BMI</button>
     </form>
   );
 };

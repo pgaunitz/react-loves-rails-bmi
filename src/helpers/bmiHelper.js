@@ -1,5 +1,10 @@
-export const calculateBmi = (weight, height) => {
+export const calculateBmi = (weight, height, method) => {
     const bmiValue = (weight / (((height / 100) * height) / 100)).toFixed(2);
+   
+    //  bmiValue = (weight / (((height / 100) * height) / 100)).toFixed(2);
+  
+    //  bmiValue = weight / (height * height) * 703
+    
     const bmiMessage = setBMIMessage(bmiValue);
     return [bmiValue, bmiMessage];
   };

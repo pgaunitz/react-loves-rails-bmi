@@ -31,6 +31,7 @@ class App extends Component {
       <div>
         
         <Form
+        countingSystem={this.state.countingSystem}
           weight={this.state.weight}
           height={this.state.height}
           onChangeHandler={this.onChangeHandler}

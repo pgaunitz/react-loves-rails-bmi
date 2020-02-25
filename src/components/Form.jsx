@@ -2,12 +2,13 @@ import React from "react";
 
 
 const Form = props => {
-  // let = weight = if (props.countingSystem == 'metric') {
-  //   "Weight in kg"
+  let dispWeight 
+    if (props.countingSystem == 'metric') {
+      dispWeight = 'kg'
+    } else {
+      dispWeight = 'pounds'
+    }
   
-  // } else {
-  //   "Weight in pounds"
-  // }
   
   return (
     <form onSubmit={props.onSubmitHandler}>
@@ -23,7 +24,7 @@ const Form = props => {
       <input
         type="number"
         required
-        placeholder="{weight}"
+        placeholder={dispWeight}
         value={props.weight}
         name="weight"
         id="weight"

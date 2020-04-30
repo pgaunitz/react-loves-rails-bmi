@@ -28,8 +28,10 @@ class App extends Component {
 
   render() {
     return (
+      <>
+      
       <div className="form_container">
-        
+      <h1 class="ui header">BMI Calculator</h1>
         <Form
         countingSystem={this.state.countingSystem}
           weight={this.state.weight}
@@ -44,6 +46,7 @@ class App extends Component {
           />
         )}
       </div>
+      </>
     );
   }
 }
